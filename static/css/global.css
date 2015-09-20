@@ -56,6 +56,9 @@ hide-text {
   background-color: transparent;
   border: 0;
 }
+.t-center {
+  text-align: center;
+}
 /*иконки*/
 .g-icon {
   display: block;
@@ -65,6 +68,9 @@ hide-text {
 .html,
 .body {
   height: 100%;
+  background-color: #e8eaf6;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .wrapper {
   height: auto !important;
@@ -87,4 +93,7 @@ hide-text {
 }
 .blk--red {
   background-color: #f44336;
+}
+.blk--dpurple {
+  background-color: #673ab7;
 }

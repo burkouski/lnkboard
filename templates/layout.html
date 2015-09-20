@@ -22,6 +22,7 @@
 
     <!-- CSS Files -->
     <!-- build:css /static/css/compress.css -->
+    <link rel="stylesheet" href="/static/css/foundation.css">
     <link rel="stylesheet" href="/static/css/global.css">
     <link rel="stylesheet" href="/static/css/blocks.css">
     <!-- endbuild -->
@@ -38,8 +39,10 @@
 
 </head>
 
-<body>
+<body class="body">
 {% block body %}
+{% endblock %}
+{% block main %}
 {% endblock %}
 </body>
 </html>

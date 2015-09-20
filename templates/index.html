@@ -1,5 +1,24 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <div class="blk--red">!!!!!!!!</div>
+        <header class="header blk--dpurple clearfix">
+            <div class="logo f-left">
+                <div class="logo__icon">lnk</div>
+                Board.io
+            </div>
+        </header>
+
+{% endblock %}
+{% block main %}
+    <section class="main">
+        <div class="site-description t-center">
+            <h1 class="site-description__title">linkboard.io</h1>
+            <h2>Сервис ссылочный закладок</h2>
+        <div class="site-description__board-list">
+            <div class="site-description__board"></div>
+            <div class="site-description__board"></div>
+            <div class="site-description__board"></div>
+        </div>
+        </div>
+    </section>
 {% endblock %}
