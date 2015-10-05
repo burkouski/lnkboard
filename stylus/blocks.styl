@@ -3,6 +3,8 @@
 @import 'global'
 
 .header
+  position fixed
+  width 100%
   padding 20px
   box-shadow 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
 .logo
@@ -22,17 +24,27 @@
   &:hover
     background #7986CB
     color white
-
+.main
+  padding 95px 0 0 0
 .site-description
   padding 20px
-  color $bgrey
+  color white
 .site-description__board
   display inline-block
+  vertical-align top
   width 300px
-  height 500px
   margin 0 20px 20px 20px
-  border 1px solid $bgrey
+  padding 20px
   border-radius 5px
   background-color white
   box-shadow 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
-
+.site-description__logo
+  margin 0 0 10px 0
+.site-description__title
+  margin 0
+  font-size 56px
+  line-height 40px
+.site-description__sub-title
+  margin 0
+  font-size 24px
+  font-weight normal

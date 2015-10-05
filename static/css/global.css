@@ -64,11 +64,35 @@ hide-text {
   display: block;
   background: url("../img/bg/sprite.png") no-repeat;
 }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px /* Preferred icon size */;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+/* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+/* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+/* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+/* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
 /*Футер к низу страницы*/
 .html,
 .body {
   height: 100%;
   background-color: #e8eaf6;
+  background: url("../img/bg/main-bg.jpg");
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -93,6 +117,12 @@ hide-text {
 }
 .blk--red {
   background-color: #f44336;
+}
+.blk--pink {
+  background-color: #e91e63;
+}
+.blk-purple {
+  background-color: #9c27b0;
 }
 .blk--dpurple {
   background-color: #673ab7;
