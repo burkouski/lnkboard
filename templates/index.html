@@ -1,45 +1,73 @@
 {% extends "layout.html" %}
 
 {% block body %}
-        <header class="header blk--dpurple clearfix">
-            <div class="logo f-left">
-                <div class="logo__icon">lnk</div>
-                Board.io
-            </div>
-        </header>
+    <header class="header blk--dpurple clearfix">
+        <div class="header__item f-right">
+            <nav class="main-nav">
+                <ul class="main-nav__list unstyled-list">
+                    <li class="main-nav__list-item"><a class="main-nav__list-lnk" href="#">Войти</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__list-lnk" href="#">Регистрация</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__list-lnk" href="#">Пользовательские борды</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__list-lnk" href="#">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
 
 {% endblock %}
 {% block main %}
     <section class="main">
-        <div class="site-description t-center blk--dpurple">
+        <div class="site-description site-description--color-white t-center blk--dpurple">
             <div class="site-description__logo">
                 <img src="/static/img/logo_icon.png" alt="linkboard.io"/>
             </div>
 
             <h1 class="site-description__title">linkboard.io</h1>
-            <h2 class="site-description__sub-title">Сервис хранения ваши персональных интернет закладок</h2>
-            
-        <div class="site-description__board-list">
-            <div class="site-description__board">
-                <div class="site-description__icon"><i class="material-icons">face</i></div>
-                <h3 class="site-description__board-title">Сохраняйте</h3>
-                <div class="site-description__content">
-                    Сохраняйте понравившиеся ссылки. Группируйте ссылки в тематические борды
+
+            <h2 class="site-description__sub-title">Сервис хранения ваших персональных интернет-закладок</h2>
+
+
+        </div>
+        <div class="site-description t-center">
+            Сохраняйте понравившиеся ссылки. Группируйте ссылки в тематические борды
+
+        </div>
+        <div class="site-description blk--white t-center">
+            <div class="site-description__board-list">
+                <div class="site-description__board">
+                    <div class="site-description__icon"><i class="material-icons">face</i></div>
+                    <h3 class="site-description__board-title">Сохраняйте</h3>
+
+                    <div class="site-description__content">
+                        Сохраняйте понравившиеся ссылки. Группируйте ссылки в тематические борды
+                    </div>
                 </div>
-            </div>
-            <div class="site-description__board">
-                <h3 class="site-description__board-title">Сохраняйте</h3>
-                <div class="site-description__content">
-                    Сохраняйте понравившиеся ссылки. Группируйте ссылки в тематические борды
+                <div class="site-description__board">
+                    <h3 class="site-description__board-title">Сохраняйте</h3>
+
+                    <div class="site-description__content">
+                        Сохраняйте понравившиеся ссылки. Группируйте ссылки в тематические борды
+                    </div>
                 </div>
-            </div>
-            <div class="site-description__board">
-                <h3 class="site-description__board-title">Сохраняйте</h3>
-                <div class="site-description__content">
-                    Сохраняйте понравившиеся ссылки. Группируйте ссылки в тематические борды
+                <div class="site-description__board">
+                    <h3 class="site-description__board-title">Сохраняйте</h3>
+
+                    <div class="site-description__content">
+                        Сохраняйте понравившиеся ссылки. Группируйте ссылки в тематические борды
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
+    <div class="site-description t-center">
+        Хотите поучавствовать и сделать проект лучше?
+        <br/>
+        Присоединяйтесь!
+        <br/>
+        <a class="btn" href="github.com">GITHUB</a>
+    </div>
     </section>
+    <footer class="footer blk--black t-center">
+     Проект сделан одним человеком в качестве экспиремента
+    </footer>
 {% endblock %}

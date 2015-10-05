@@ -42,7 +42,7 @@ input
   placeholder(#ffffff)
 
 /*сброс стилей для списков*/
-.unstyled
+.unstyled-list
   margin 0
   padding 0
   list-style none
@@ -52,6 +52,10 @@ hide-text
   text-hide()
 .t-center
   text-align center
+.f-left
+  float left
+.f-right
+  float right
 /*иконки*/
 .g-icon
   display block
@@ -84,8 +88,9 @@ hide-text
 .body
   height 100%
   background-color #E8EAF6
-  background url(../img/bg/main-bg.jpg)
+  background rgb(238, 238, 238)
   color $white
+  font-size 20px
   font-family: 'Roboto Condensed', sans-serif;
 .wrapper
   height auto !important
@@ -99,8 +104,10 @@ hide-text
   max-width 1400px
 .footer-push
   height footerHeight
+
 .footer
-  height footerHeight
+  padding 20px
+  font-size 13px
 .no-padding
   padding 0!important
 
@@ -113,5 +120,10 @@ hide-text
   background-color $purple
 .blk--dpurple
   background-color $dpurple
-
+.blk--grey
+  background-color $grey
+.blk--white
+  background-color $white
+.blk--black
+  background-color $black
 
