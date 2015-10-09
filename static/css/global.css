@@ -99,7 +99,7 @@ hide-text {
   height: 100%;
   background-color: #e8eaf6;
   background: #eee;
-  color: #fff;
+  color: #656565;
   font-size: 20px;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -143,4 +143,26 @@ hide-text {
 }
 .blk--black {
   background-color: #000;
+}
+.md-icon-button {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #000;
+  font-size: 20px;
+  line-height: 0.8;
+}
+.riple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #f59c4e;
 }

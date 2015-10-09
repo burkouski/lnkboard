@@ -41,12 +41,17 @@
 
 </head>
 
-<body class="body">
+<body class="body" ng-app="application">
 {% block body %}
 {% endblock %}
 {% block main %}
 {% endblock %}
 </body>
+<script src="/static/js/vendor/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
+<script src="/static/js/app/app.js"></script>
+<script src="/static/js/app/directives/directiveModal.js"></script>
 </html>
 
 

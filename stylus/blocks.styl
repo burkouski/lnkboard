@@ -61,3 +61,67 @@
   text-transform uppercase
   &:hover
     color #ffffff
+
+.modal
+  position fixed
+  top 0
+  left 0
+  display none
+  width 100%
+  height 100%
+  background rgba(0,0,0,0.6)
+.modal__layout
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+.modal__wrap
+  position absolute
+  width 600px
+  height 500px
+  background #fff
+  box-shadow 0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22)
+.modal__inner
+  padding 60px
+.modal__title
+  padding 30px 60px 30px
+  box-shadow 0 1px 5px rgba(0, 0, 0, 0.25)
+  background $lgreen
+  color #ffffff
+  font-size 24px
+  text-transform uppercase
+.modal__close
+  position absolute
+  top 15px
+  right 15px
+  width 35px
+  height 35px
+  border-radius 50%
+  color #fff
+  line-height 34px
+
+  cursor pointer
+  box-shadow 0 2px 0px rgba(0, 0, 0, 0.25)
+  transition all 0.35s ease-out
+  &:hover
+    box-shadow none
+    .modal__close-hover
+      width 100%
+      height 100%
+      opacity 1
+.modal__close-hover
+  position: absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+  opacity 0
+  width 0
+  height 0
+  border-radius 50%
+  background rgba(128, 128, 128, 0.35)
+  transition all 0.35s ease-out
+.modal__close-icon
+  position relative
+  z-index 2
+  vertical-align middle
