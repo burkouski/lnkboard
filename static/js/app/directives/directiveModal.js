@@ -4,7 +4,6 @@ angular
         return {
             restrict: 'A',
             transclude: false,
-            scope: {},
             link: function ($scope, $element, $attrs, ctrl) {
                 $element.bind('click', openModal);
             },
@@ -52,10 +51,13 @@ angular
         return {
             restrict: 'E',
             transclude: true,
+            scope: {
+                title: '@'
+            },
             template: '<div class="modal">' +
             '<div class="modal__layout" ng-click="closeModal($event)"></div>' +
             '<div class="modal__wrap">' +
-             '<div class="modal__title">Авторизация</div>' +
+             '<div class="modal__title">{{title}}</div>' +
             '<div class="modal__close" ng-click="closeModal($event)">' +
              '<div class="modal__close-hover"></div>' +
             '<i class="material-icons modal__close-icon">close</i>' +
@@ -78,7 +80,6 @@ angular
                     })
                 }
             }],
-
             replace: true
         };
 
