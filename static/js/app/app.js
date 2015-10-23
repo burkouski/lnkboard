@@ -1,12 +1,12 @@
 (function () {
   'use strict';
 
-  angular
+angular
     .module('application', ['application.directives']);
 
 
-  angular
-    .module('application.directives', []);
+angular
+    .module('application.directives',[]);
   //angular
   //  .module('application.config', []);
   //
